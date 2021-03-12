@@ -1,0 +1,28 @@
+@media only screen and (max-width: 768px) {
+    header .main-head h2 {
+        font-size: 2rem;
+    }
+
+    header .navbar-nav {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    header .nav-status {
+        display: none;
+    }
+
+    header .main-head h2 {
+        padding: 1em;
+        font-size: 1.4rem;
+    }
+
+    header .social-media a {
+        display: initial !important;
+    }
+
+    section img {
+        padding-top: 3em;
+    }
+}

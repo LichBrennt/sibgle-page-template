@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@500;600;700&display=swap');
+
+/* variables */
+
+:root {
+    --BG: #0B1D26;
+    --White: #fffeee;
+    --Yellow: #FDD130;
+    --Lato: 'Lato', sans-serif;
+    --Oswald: 'Oswald', sans-serif;
+}
+
+.text-change a {
+    color: var(--White) !important;
+    border-right: 1px solid var(--White) !important;
+}
+
+.text-change .active {
+    border-right: 2px solid var(--White) !important;
+}
+
+/* header */
+header::before {
+    content: '';
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+    z-index: -1;
+    background-image: url('../assets/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    min-height: 100vh;
+}
+
+header .navbar {
+    font-family: var(--Lato);
+    padding: 5vmin 4vmin;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--BG);
+}
+
+header .navbar-brand {
+    font-weight: bolder;
+}
+
+header .main-head h2 {
+    font-size: 3rem;
+}
+
+header .main-head .col-md-3 a {
+    display: block;
+}
+
+header .nav-status {
+    transition: all ease 0.7s;
+    position: fixed;
+    right: 4vmin;
+}
+
+header .nav-status a {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding-right: 2vmin;
+}
+
+header .nav-status .active {
+    border-right: 2px solid var(--BG);
+}
+
+header .social-media a {
+    padding: 1rem;
+}
+
+/* section */
+
+section {
+    color: var(--White);
+    background-color: var(--BG);
+}
+
+#section-1 {
+    background: linear-gradient(transparent 5%, var(--BG) 26%);
+}
+
+section .container {
+    padding: 16vmin 10vmin;
+}
+
+section h2 {
+    padding: 1rem 0;
+    font-size: 32px;
+}
+
+section p,
+section a {
+    font-size: 12px;
+}
+
+section a {
+    color: var(--Yellow);
+    text-decoration: none;
+}
+
+section a i {
+    padding: 0 1em;
+}
+
+section hr {
+    width: 6vmin;
+    background-color: var(--Yellow);
+    opacity: 1;
+}
+
+section hr#uno::before {
+    content: '01';
+}
+
+section hr#dos::before {
+    content: '02';
+}
+
+section hr#tres::before {
+    content: '03';
+}
+
+section hr::before {
+    font-size: 6rem;
+    font-weight: bolder;
+    position: absolute;
+    transform: translateY(-50%) translateX(-30%);
+    opacity: 0.15;
+}
+
+section img {
+    width: 80%;
+}
+
+footer {
+    background-color: var(--BG);
+    color: var(--White);
+    padding: 5vmin 8vmin;
+}
+
+footer .col-md-6 h3 {
+    color: var(--BG);
+    text-shadow: 1px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+footer h3 {
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 8vmin;
+}
+
+footer p {
+    opacity: 0.6;
+}
+
+footer a,
+footer p {
+    display: block;
+    font-size: 12px;
+    line-height: 5vmin;
+    text-decoration: none;
+    color: var(--White);
+}
+
+footer .col-md-3 h3 {
+    color: var(--Yellow);
+}
